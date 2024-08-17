@@ -1,259 +1,264 @@
-<html><head><base href="https://fabricefbo.github.io/Mes-matchs/"></head><body>
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FBO Service - Solutions Professionnelles et Créatives</title>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <style>
-            :root {
-                --primary-color: #3498db;
-                --secondary-color: #2c3e50;
-                --accent-color: #e74c3c;
-                --background-color: #ecf0f1;
-                --text-color: #34495e;
-            }
-    
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-    
-            body {
-                font-family: 'Poppins', sans-serif;
-                background-color: var(--background-color);
-                color: var(--text-color);
-                line-height: 1.6;
-            }
-    
-            .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 20px;
-            }
-    
-            header {
-                background-color: var(--primary-color);
-                color: white;
-                padding: 20px 0;
-                position: fixed;
-                width: 100%;
-                top: 0;
-                z-index: 1000;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            }
-    
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-    
-            .logo-container {
-                display: flex;
-                align-items: center;
-            }
-    
-            .logo-image {
-                width: 40px;
-                height: 40px;
-                margin-right: 10px;
-            }
-    
-            .logo {
-                font-size: 1.5rem;
-                font-weight: 700;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-            }
-    
+ <html><head><base href="https://fabricefbo.github.io/Mes-matchs/"></head><body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBO Service - Solutions Professionnelles et Créatives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --background-color: #ecf0f1;
+            --text-color: #34495e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 150px 0 100px;
+            margin-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+
+        .services {
+            padding: 100px 0;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
             .nav-links {
-                display: flex;
-                list-style: none;
+                display: none;
             }
-    
-            .nav-links li {
-                margin-left: 30px;
-            }
-    
-            .nav-links a {
-                color: white;
-                text-decoration: none;
-                font-weight: 600;
-                transition: color 0.3s ease;
-            }
-    
-            .nav-links a:hover {
-                color: var(--accent-color);
-            }
-    
-            .hero {
-                background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-                color: white;
-                text-align: center;
-                padding: 150px 0 100px;
-                margin-top: 80px;
-            }
-    
+
             .hero h1 {
-                font-size: 3rem;
-                margin-bottom: 20px;
-            }
-    
-            .hero p {
-                font-size: 1.2rem;
-                max-width: 600px;
-                margin: 0 auto 30px;
-            }
-    
-            .cta-button {
-                display: inline-block;
-                background-color: var(--accent-color);
-                color: white;
-                padding: 12px 30px;
-                border-radius: 30px;
-                text-decoration: none;
-                font-weight: 600;
-                transition: background-color 0.3s ease;
-            }
-    
-            .cta-button:hover {
-                background-color: #c0392b;
-            }
-    
-            .services {
-                padding: 100px 0;
-            }
-    
-            .services h2 {
-                text-align: center;
                 font-size: 2.5rem;
-                margin-bottom: 50px;
             }
-    
-            .service-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 30px;
+
+            .hero p {
+                font-size: 1rem;
             }
-    
-            .service-card {
-                background-color: white;
-                border-radius: 10px;
-                padding: 30px;
-                text-align: center;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
-            }
-    
-            .service-card:hover {
-                transform: translateY(-10px);
-            }
-    
-            .service-icon {
-                font-size: 3rem;
-                color: var(--primary-color);
-                margin-bottom: 20px;
-            }
-    
-            .service-card h3 {
-                font-size: 1.5rem;
-                margin-bottom: 15px;
-            }
-    
-            footer {
-                background-color: var(--secondary-color);
-                color: white;
-                text-align: center;
-                padding: 20px 0;
-            }
-    
-            @media (max-width: 768px) {
-                .nav-links {
-                    display: none;
-                }
-    
-                .hero h1 {
-                    font-size: 2.5rem;
-                }
-    
-                .hero p {
-                    font-size: 1rem;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav class="container">
-                <div class="logo-container">
-                    <img src="fbo-logo.png" alt="FBO Service Logo" class="logo-image">
-                    <div class="logo">FBO Service</div>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Accueil</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Solutions Professionnelles et Créatives</h1>
-                <p>Chez FBO Service, nous transformons vos idées en réalité. De la rédaction à la création web, en passant par le streaming sportif, nous sommes là pour vous accompagner.</p>
-                <a href="#contact" class="cta-button">Contactez-nous</a>
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo-container">
+                <img src="fbo-logo.png" alt="FBO Service Logo" class="logo-image">
+                <div class="logo">FBO Service</div>
             </div>
-        </section>
-    
-        <section id="services" class="services">
-            <div class="container">
-                <h2>Nos Services</h2>
-                <div class="service-grid">
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
-                        <h3>Rédaction Professionnelle</h3>
-                        <p>Rapports de stage, mémoires, CV professionnels et bien plus encore. Nous donnons vie à vos écrits.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                        <h3>Création Web & Design</h3>
-                        <p>Sites internet modernes et affiches publicitaires percutantes pour booster votre présence en ligne.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-gamepad"></i></div>
-                        <h3>Installation de Jeux PS2 sur PC</h3>
-                        <p>Retrouvez vos jeux PS2 préférés sur votre ordinateur grâce à notre service d'installation expert.</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fas fa-futbol"></i></div>
-                        <h3>Diffusion de Matchs en Direct</h3>
-                        <p>Profitez des meilleurs moments sportifs avec notre service de streaming en direct des matchs.</p>
-                    </div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Solutions Professionnelles et Créatives</h1>
+            <p>Chez FBO Service, nous transformons vos idées en réalité. De la rédaction à la création web, en passant par le streaming sportif et le marketing digital, nous sommes là pour vous accompagner.</p>
+            <a href="#contact" class="cta-button">Contactez-nous</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>Rédaction Professionnelle</h3>
+                    <p>Rapports de stage, mémoires, CV professionnels et bien plus encore. Nous donnons vie à vos écrits.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Création Web & Design</h3>
+                    <p>Sites internet modernes et affiches publicitaires percutantes pour booster votre présence en ligne.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Agence de Marketing Digital</h3>
+                    <p>Stratégies de marketing personnalisées, gestion des réseaux sociaux, SEO, et campagnes publicitaires pour propulser votre entreprise.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-futbol"></i></div>
+                    <h3>Diffusion de Matchs en Direct</h3>
+                    <p>Profitez des meilleurs moments sportifs avec notre service de streaming en direct des matchs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Installation de Jeux PS2 sur PC</h3>
+                    <p>Retrouvez vos jeux PS2 préférés sur votre ordinateur grâce à notre service d'installation expert.</p>
                 </div>
             </div>
-        </section>
-    
-        <footer id="contact">
-            <div class="container">
-                <p>FBO Service</p>
-                <p>Contactez-nous : 📧 fabricefbo9@gmail.com | 📞 +228 98 22 12 74 | 📍 Agoe logopé</p>
-            </div>
-        </footer>
-    
-        <script>
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>FBO Service</p>
+            <p>Contactez-nous : 📧 fabricefbo9@gmail.com | 📞 +228 98 22 12 74 | 📍 Agoe logopé</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
                 });
             });
-        </script>
-    </body>
-    </html>
-    </body></html>
+        });
+    </script>
+</body>
+</html>
+</body></html> 
